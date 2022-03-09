@@ -1,6 +1,17 @@
-type ExampleEntity @entity {
+type Pool @entity {
+  # pool address
   id: ID!
-  count: BigInt!
-  fee: Int! # uint24
-  tickSpacing: Int! # int24
+}
+
+type Factory @entity {
+  # factory address
+  id: ID!
+
+  # Total number of unique users of swaps
+  totalUniqueUsers: BigInt!
+}
+
+type Swap_User @entity {
+  # factory address
+  id: ID!
 }
