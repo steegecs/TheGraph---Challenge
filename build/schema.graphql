@@ -1,0 +1,17 @@
+type Pool @entity {
+  # pool address
+  id: ID!
+}
+
+type Factory @entity {
+  # factory address
+  id: ID!
+
+  # Total number of unique users of swaps
+  totalUniqueUsers: BigInt!
+}
+
+type Swap_User @entity {
+  # factory address
+  id: ID!
+}
